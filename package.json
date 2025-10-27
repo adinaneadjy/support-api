@@ -319,7 +319,6 @@
     "pkg-dir": "^4.2.0",
     "possible-typed-array-names": "^1.1.0",
     "prelude-ls": "^1.2.1",
-    "prettier": "^3.6.2",
     "pretty-format": "^30.2.0",
     "proxy-addr": "^2.0.7",
     "pstree.remy": "^1.1.8",
@@ -430,12 +429,19 @@
     "yargs-parser": "^21.1.1",
     "yocto-queue": "^0.1.0"
   },
-"scripts": {
+  "scripts": {
   "seed": "node scripts/seed.js",
   "test": "echo \"Error: no test specified\" && exit 1",
-  "lint": "eslint ."
+  "lint": "eslint .",
+  "format": "prettier --write .",
+  "format:check": "prettier --check ."
 },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  }
 }

@@ -1,15 +1,14 @@
 module.exports = {
   env: {
-    node: true,      // On est sur Node.js
-    es2021: true      // Permet syntaxe ES2021 
+    node: true,
+    es2021: true
   },
-  extends: "eslint:recommended", // règles recommandées par ESLint
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
-    ecmaVersion: 12,   // ES2021
-    sourceType: "module" // pour utiliser import/export
+    ecmaVersion: 12,
+    sourceType: "module"
   },
   rules: {
-    // Ici j'ajouter mes règles 
-   
+    // j'ajouter mes règles 
   }
 };
