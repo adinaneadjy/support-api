@@ -3,9 +3,9 @@ name: CI
 # Quand le workflow se lance :
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   # --- JOB 1 : Vérification du code ---
@@ -20,8 +20,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       # 3. Installer les dépendances
       - name: Install dependencies
@@ -39,7 +39,7 @@ jobs:
   tests:
     name: Run Tests
     runs-on: ubuntu-latest
-    needs: code-quality  # Ne démarre que si code-quality est OK
+    needs: code-quality # Ne démarre que si code-quality est OK
 
     # Service MongoDB dans Docker
     services:
@@ -59,8 +59,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
