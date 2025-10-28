@@ -2,6 +2,7 @@ module.exports = {
   env: {
     node: true,
     es2021: true,
+    jest: true, // <-- ajoutez ceci
   },
   extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
@@ -9,6 +10,6 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    // j'ajouter mes règles
+    // vos règles ici
   },
 };
