@@ -429,12 +429,12 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-  "seed": "node scripts/seed.js",
-  "lint": "eslint .",
-  "format": "prettier --write .",
-  "format:check": "prettier --check .",
-  "test": "jest"
-},
+    "seed": "node scripts/seed.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
