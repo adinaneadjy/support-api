@@ -69,19 +69,23 @@ git checkout -b feature/add-requesttype-model
 
 Commits conventionnels :
 1.Format : type: description
+
 2.Exemple : feat: add RequestType model with validation
+
 3.Création de Pull Request sur GitHub depuis la branche.
+
 4.Exécution automatique des checks CI/CD sur la PR.
+
 5.Merge dans main uniquement si tous les checks passent.
+
 6.Suppression automatique de la branche après merge.
 
+
 Exemple de types de commits :
--feat → nouvelle fonctionnalité
--fix → correction de bug
--test → ajout ou modification de tests
--chore → tâches de maintenance
+-feat → nouvelle fonctionnalité -fix → correction de bug -test → ajout ou modification de tests -chore → tâches de maintenance
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/7cfd0050fd1997474b0d0ebed85861867e1ffc6a/1.2.png)
+
 
 
 
