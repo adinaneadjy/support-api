@@ -12,24 +12,43 @@ Une API REST Node.js connectée à MongoDB pour servir de support technique
 
 support-api/
 ├── src/
+
 │   ├── models/
+
 │   │   └── RequestType.js
+
 │   ├── routes/
+
 │   │   └── requestTypes.js
+
 │   ├── config/
+
 │   │   └── database.js
+
 │   └── server.js
+
 ├── tests/
+
 │   └── requestTypes.test.js
+
 ├── scripts/
+
 │   └── seed.js
+
 ├── .github/
+
 │   └── workflows/
+
 │       └── ci.yml
+
 ├── .eslintrc.js
+
 ├── .prettierrc
+
 ├── package.json
+
 └── README.md
+
 🔍 Description des dossiers
 
 src/models/ → Schémas de données Mongoose
@@ -92,9 +111,13 @@ Suppression automatique de la branche après merge
 Configuration via Settings → Branches → Branch protection rules :
 
 ✅ Require pull request before merging
+
 ✅ Require status checks to pass before merging
+
 ✅ Require branches to be up to date before merging
+
 ✅ Dismiss stale pull request approvals when new commits are pushed
+
 ❌ Block direct push to main
 
 🎯 Pourquoi ces règles ?
@@ -108,8 +131,11 @@ Empêcher les erreurs de push direct
 Assurer que le code validé passe tous les tests CI/CD
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.3.png)
 
+
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.4.png)
+
 ⚙️ Intégration Continue (CI/CD)
+
 📄 Fichier : .github/workflows/ci.yml
 
 Deux jobs sont définis :
@@ -135,6 +161,7 @@ Vérifie une couverture ≥ 70 %
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.5.png)
 
 🗃️ Base de données MongoDB & API Express
+
 📌 Modèle RequestType
 
 Exemple de schéma Mongoose :
@@ -165,4 +192,5 @@ module.exports = mongoose.model('RequestType', RequestTypeSchema);
 
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.6.png)
+
 
