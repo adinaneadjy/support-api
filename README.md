@@ -8,6 +8,7 @@ Des règles de protection de branche
 Un pipeline CI/CD via GitHub Actions
 
 Une API REST Node.js connectée à MongoDB pour servir de support technique
+
 📁 Arborescence du projet
 
 support-api/
@@ -192,5 +193,6 @@ module.exports = mongoose.model('RequestType', RequestTypeSchema);
 
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.6.png)
+
 
 
