@@ -5,27 +5,47 @@ L’objectif principal est de mettre en place un workflow Git et GitHub professi
 
 Arborescence:
 support-api/
+
 ├── src/
+
 │ ├── models/
+
 │ │ └── RequestType.js
+
 │ ├── routes/
+
 │ │ └── requestTypes.js
+
 │ ├── config/
+
 │ │ └── database.js
+
 │ └── server.js
+
 ├── tests/
+
 │ └── requestTypes.test.js
+
 ├── scripts/
+
 │ └── seed.js
+
 ├── .github/
+
 │ └── workflows/
+
 │ └── ci.yml
+
 ├── .eslintrc.js
+
 ├── .prettierrc
+
 ├── package.json
+
 └── README.md
 
 Chaque dossier a un rôle précis :
+
 -src/models/ : contient les schémas de données Mongoose.
 -src/routes/ : définit les routes Express de l’API.
 -src/config/ : configuration de la base de données MongoDB.
@@ -34,6 +54,7 @@ Chaque dossier a un rôle précis :
 -.github/workflows/ : configuration de l’intégration continue (CI/CD).
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/c0067aaaef56660229bc4e0580cb18f4f4277afc/1.1.png)
+
 
 
 
