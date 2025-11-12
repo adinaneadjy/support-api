@@ -82,9 +82,16 @@ Commits conventionnels :
 
 
 Exemple de types de commits :
--feat → nouvelle fonctionnalité -fix → correction de bug -test → ajout ou modification de tests -chore → tâches de maintenance
+-feat → nouvelle fonctionnalité 
+
+-fix → correction de bug 
+
+-test → ajout ou modification de tests
+
+-chore → tâches de maintenance
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/7cfd0050fd1997474b0d0ebed85861867e1ffc6a/1.2.png)
+
 
 
 
