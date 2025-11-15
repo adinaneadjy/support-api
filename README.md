@@ -223,5 +223,6 @@ module.exports = mongoose.model('RequestType', RequestTypeSchema);
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.6.png)
 
 
+![image alt](https://github.com/adinaneadjy/support-api/blob/46bf5ca31a00ff76f8e0e3954143ff6c84855419/1.7.png)
 
 
