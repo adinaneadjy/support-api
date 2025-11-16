@@ -210,6 +210,7 @@ const RequestTypeSchema = new mongoose.Schema({
   isActive: { type: Boolean, default: true }
 }, { timestamps: true });
 
+![image alt](https://github.com/adinaneadjy/support-api/blob/990f9aa2a9ed4670fa70cb7de7665dc835045fb8/db.png)
 module.exports = mongoose.model('RequestType', RequestTypeSchema);
 
 | Méthode  | Endpoint                 | Description                                    |
