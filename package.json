@@ -2,7 +2,7 @@
   "name": "support-api",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "src/server.js",
   "directories": {
     "test": "tests"
   },
@@ -435,6 +435,13 @@
     "format:check": "prettier --check .",
     "test": "jest"
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 70
+      }
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -445,3 +452,4 @@
     "prettier": "^3.6.2"
   }
 }
+
