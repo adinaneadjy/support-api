@@ -45,3 +45,19 @@ describe("RequestTypes API", () => {
     expect(Array.isArray(res.body)).toBe(true);
   });
 });
+test("GET /api/request-types ne renvoie que les types actifs", async () => {
+  await mongoose.connection.db.collection("requesttypes").insertOne({
+    code: "INACTIVE_TEST",
+    name: "Inactive",
+    description: "desc inactive",
+    category: "test",
+    isActive: false,
+  });
+
+  const res = await request(server).get("/api/request-types");
+
+  const inactive = res.body.find((item) => item.code === "INACTIVE_TEST");
+
+  expect(inactive).toBeUndefined();
+});
+
