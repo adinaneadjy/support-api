@@ -37,38 +37,38 @@ Un pipeline CI/CD via GitHub Actions
 
 Une API REST Node.js connectée à MongoDB pour servir de support technique
 
- Arborescence du projet
+Arborescence du projet
 
 support-api/
 ├── src/
 
-│   ├── models/
+│ ├── models/
 
-│   │   └── RequestType.js
+│ │ └── RequestType.js
 
-│   ├── routes/
+│ ├── routes/
 
-│   │   └── requestTypes.js
+│ │ └── requestTypes.js
 
-│   ├── config/
+│ ├── config/
 
-│   │   └── database.js
+│ │ └── database.js
 
-│   └── server.js
+│ └── server.js
 
 ├── tests/
 
-│   └── requestTypes.test.js
+│ └── requestTypes.test.js
 
 ├── scripts/
 
-│   └── seed.js
+│ └── seed.js
 
 ├── .github/
 
-│   └── workflows/
+│ └── workflows/
 
-│       └── ci.yml
+│ └── ci.yml
 
 ├── .eslintrc.js
 
@@ -94,16 +94,15 @@ tests/ → Tests unitaires (Jest + Supertest)
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/c0067aaaef56660229bc4e0580cb18f4f4277afc/1.1.png)
 
- Workflow Git
+Workflow Git
 Création de branche
 git checkout -b feature/add-requesttype-model
 
- Commits conventionnels
+Commits conventionnels
 
 Format :
 
 type: description
-
 
 Exemple :
 
@@ -132,10 +131,9 @@ Suppression automatique de la branche après merge
 | **test**  | Ajout ou modification de tests |
 | **chore** | Tâches de maintenance          |
 
-
 ![image alt](https://github.com/adinaneadjy/support-api/blob/7cfd0050fd1997474b0d0ebed85861867e1ffc6a/1.2.png)
 
- Protection de la branche main
+Protection de la branche main
 
 Configuration via Settings → Branches → Branch protection rules :
 
@@ -159,7 +157,6 @@ enfin elle empêcher les erreurs de push direct
 
 Assurer que le code validé passe tous les tests CI/CD
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.3.png)
-
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.4.png)
 
@@ -189,25 +186,25 @@ Vérifie une couverture ≥ 70 %
 
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.5.png)
 
- Base de données MongoDB & API Express
+Base de données MongoDB & API Express
 
- Modèle RequestType
+Modèle RequestType
 
 Exemple de schéma Mongoose :
 const mongoose = require('mongoose');
 
 const RequestTypeSchema = new mongoose.Schema({
-  code: { type: String, unique: true, required: true },
-  name: { type: String, required: true },
-  description: { type: String, required: true },
-  priority: { 
-    type: String, 
-    enum: ['low', 'medium', 'high', 'critical'], 
-    default: 'medium' 
-  },
-  category: { type: String, required: true },
-  estimatedResponseTime: Number,
-  isActive: { type: Boolean, default: true }
+code: { type: String, unique: true, required: true },
+name: { type: String, required: true },
+description: { type: String, required: true },
+priority: {
+type: String,
+enum: ['low', 'medium', 'high', 'critical'],
+default: 'medium'
+},
+category: { type: String, required: true },
+estimatedResponseTime: Number,
+isActive: { type: Boolean, default: true }
 }, { timestamps: true });
 
 module.exports = mongoose.model('RequestType', RequestTypeSchema);
@@ -219,10 +216,6 @@ module.exports = mongoose.model('RequestType', RequestTypeSchema);
 | **POST** | `/api/request-types`     | Crée un nouveau type                           |
 | **GET**  | `/health`                | Vérifie l’état du service (`{ status: 'ok' }`) |
 
-
 ![image alt](https://github.com/adinaneadjy/support-api/blob/0526b44e9f1ff55309c3b23f82370fbf37917219/1.6.png)
 
-
 ![image alt](https://github.com/adinaneadjy/support-api/blob/46bf5ca31a00ff76f8e0e3954143ff6c84855419/1.7.png)
-
-
