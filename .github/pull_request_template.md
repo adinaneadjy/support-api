@@ -3,6 +3,7 @@
 Décrivez les changements apportés ⟶
 
 ## Type de changement
+
 - [ x] 🐛 Bug fix
 - [ x] ✨ Nouvelle fonctionnalité
 - [x ] 📝 Documentation

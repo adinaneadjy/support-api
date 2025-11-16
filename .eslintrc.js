@@ -2,7 +2,7 @@ module.exports = {
   env: {
     node: true,
     es2021: true,
-    jest: true, // <-- ajoutez ceci
+    jest: true,
   },
   extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
@@ -10,6 +10,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    // vos règles ici
+    "no-console": "off",
+    "func-names": "off",  
   },
 };
