@@ -17,5 +17,6 @@ const requestTypeSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-// **exporter le modèle**
+
+
 module.exports = mongoose.model("RequestType", requestTypeSchema);

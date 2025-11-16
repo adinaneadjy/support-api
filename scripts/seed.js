@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 
-// ✅ Chemin correct vers ton modèle
+//  Chemin correct vers ton modèle
 const RequestType = require("../src/models/RequestType");
 
 const MONGO_URI =
