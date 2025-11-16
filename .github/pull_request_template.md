@@ -2,18 +2,18 @@
 Décrivez les changements apportés ⟶
 
 ## Type de changement
-- [x ] 🐛 Bug fix
-- [ x] ✨ Nouvelle fonctionnalité
-- [ x] 📝 Documentation
-- [ x] ♻ Refactoring
-- [x ] ✅ Tests
+- [ ] 🐛 Bug fix
+- [ ] ✨ Nouvelle fonctionnalité
+- [ ] 📝 Documentation
+- [ ] ♻ Refactoring
+- [ ] ✅ Tests
 
 ## Checklist
-- [x ] Mon code suit les conventions du projet
-- [x ] J'ai effectué une auto-revue de mon code
-- [ x] J'ai ajouté des tests
-- [x ] Les tests passent localement
-- [x ] ESLint et Prettier passent sans erreurs
+- [ ] Mon code suit les conventions du projet
+- [ ] J'ai effectué une auto-revue de mon code
+- [ ] J'ai ajouté des tests
+- [ ] Les tests passent localement
+- [ ] ESLint et Prettier passent sans erreurs
 
 
 
